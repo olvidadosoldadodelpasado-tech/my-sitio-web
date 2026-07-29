@@ -34,40 +34,5 @@
         <strong>mestro guadarrama este texto se mueve con el codigo marquee</strong>
     </marquee>
 
-    <script>
-      // Copiar enlace actual al portapapeles (funciona en la mayoría de navegadores).
-      document.getElementById('copyLinkBtn').addEventListener('click', function () {
-        const url = window.location.href;
-        // Preferir la API moderna
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(url).then(function () {
-            document.getElementById('copyMsg').textContent = 'Enlace copiado.';
-            setTimeout(() => document.getElementById('copyMsg').textContent = '', 2500);
-          }, function () {
-            fallbackCopy(url);
-          });
-        } else {
-          fallbackCopy(url);
-        }
-
-        function fallbackCopy(text) {
-          const textarea = document.createElement('textarea');
-          textarea.value = text;
-          textarea.style.position = 'fixed';
-          textarea.style.left = '-9999px';
-          document.body.appendChild(textarea);
-          textarea.select();
-          try {
-            document.execCommand('copy');
-            document.getElementById('copyMsg').textContent = 'Enlace copiado.';
-          } catch (err) {
-            document.getElementById('copyMsg').textContent = 'No se pudo copiar. Selecciona y copia manualmente.';
-          }
-          document.body.removeChild(textarea);
-          setTimeout(() => document.getElementById('copyMsg').textContent = '', 2500);
-        }
-      });
-    </script>
-
 </body>
 </html>
