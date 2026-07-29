@@ -1,1 +1,38 @@
-# my-sitio-web
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>APRENDIENDO A HACER MI SITIO WEB - Inicio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      nav a { margin-right: 8px; }
+      .self-link { margin-top: 12px; display:inline-block; }
+      button { margin-left: 8px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="joseluis.html">Inicio</a> |
+        <a href="nosotros.html">Nosotros</a> |
+        <a href="contacto.html">Contacto</a> |
+    </nav>
+
+    <hr>
+
+    <!-- Sección con id para crear un permalink -->
+    <section id="inicio">
+        <h1>BIENVENIDO A MI PÁGINA web</h1>
+        <p>Esta es la página principal de mi tarea de evolución web.</p>
+
+     
+        <p class="self-link">
+            
+
+    <h2>Animación Nativa:</h2>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <strong>mestro guadarrama este texto se mueve con el codigo marquee</strong>
+    </marquee>
+
+</body>
+</html>
