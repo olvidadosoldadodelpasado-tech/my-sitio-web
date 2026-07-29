@@ -15,7 +15,7 @@
     <nav>
         <a href="joseluis.html">Inicio</a> |
         <a href="nosotros.html">Nosotros</a> |
-        <a href="contacto.html">Contacto</a> |
+        <a href="Contacto.html">Contacto</a> |
     </nav>
 
     <hr>
